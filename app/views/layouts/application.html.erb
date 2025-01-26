@@ -27,7 +27,11 @@
     <%= button_to "Log out", session_path, method: :delete if authenticated? %>
   </nav>
 
-  <main>
-    <%= yield %>
-  </main>
+  <body>
+    <div class="notice"><%= notice %></div>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+  
 </html>
